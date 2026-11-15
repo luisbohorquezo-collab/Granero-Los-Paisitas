@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce los productos disponibles en el catálogo de Granero La Esquina.">
+  <title>Granero Los Paisitas | Catálogo de productos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="barra">🌿 Productos para tu hogar, cerca de ti</div>
+  <header class="cabecera">
+    <nav class="contenedor navegacion" aria-label="Navegación principal">
+      <a class="marca" href="#inicio">🛒 Granero <span>Los Paisitas</span></a>
+      <div class="enlaces"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a
+          href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="portada" id="inicio">
+      <div class="contenedor portada-contenido">
+        <div><span class="etiqueta">EL GRANERO DE TU BARRIO</span>
+          <h1>Todo lo que necesitas, <em>en un solo lugar.</em></h1>
+          <p>Explora nuestro catálogo de granos, abarrotes, bebidas y productos para el hogar. Conoce nuestra variedad
+            de productos.</p><a class="boton" href="#catalogo">Explorar catálogo →</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1000&auto=format&fit=crop&q=85"
+          alt="Pasillo de productos de supermercado" width="600" height="420">
+      </div>
+    </section>
+    <section id="catalogo" class="contenedor seccion">
+      <span class="etiqueta">NUESTROS PRODUCTOS</span>
+      <h2>Catálogo del granero</h2>
+      <p>Explora nuestros productos por nombre o categoría.</p>
+      <div class="herramientas"><label class="campo"><span>Buscar producto</span><input type="search" id="buscar"
+            placeholder="Ej. arroz, café, jabón..."></label><label class="campo"><span>Categoría</span><select
+            id="categoria">
+            <option value="Todas">Todas las categorías</option>
+          </select></label></div>
+      <p id="contador" class="contador" aria-live="polite"></p>
+      <div id="productos" class="productos"></div>
+    </section>
+    <section class="nosotros" id="nosotros">
+      <div class="contenedor"><span class="etiqueta">SOBRE NOSOTROS</span>
+        <h2>Tu granero de confianza</h2>
+        <p>En Granero Los Paisitas trabajamos cada día para ofrecerte variedad de productos de calidad, con buenos precios y la mejor atención.
+
+Somos un negocio familiar que busca brindar confianza, cercanía y comodidad a nuestros clientes, ofreciendo todo lo que necesitas para tu hogar en un solo lugar.
+
+Granero Los Paisitas, donde la calidad, el buen servicio y la tradición nos unen.</p>
+      </div>
+    </section>
+     <section class="contenedor seccion contacto" id="contacto"><span class="etiqueta">INFORMACIÓN</span>
+      <h2>Visítanos</h2>
+      <p><strong>Contacto:</strong> 3128388953</p>
+      <p><strong>Direccion:</strong> 234H+JR San Benito Abad</p>
+      <p><strong>Importante:</strong> Este sitio es un catálogo demostrativo. No recibe pedidos ni pagos en línea.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="contenedor">© <span id="anio"></span> Granero Los Paisitas · Catálogo informativo</div>
+  </footer>
+</body>
+
+</html>

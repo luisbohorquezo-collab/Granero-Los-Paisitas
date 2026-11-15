@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+    --verde: #206b48;
+    --oscuro: #163f30;
+    --suave: #f1f7ee;
+    --texto: #25382c;
+    --borde: #e1e8df
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: var(--texto)
+}
+
+.contenedor {
+    width: min(1140px, 92%);
+    margin: auto
+}
+
+.barra {
+    background: var(--oscuro);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px
+}
+
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid var(--borde)
+}
+
+.navegacion {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px
+}
+
+.marca {
+    text-decoration: none;
+    color: var(--oscuro);
+    font: 800 24px Outfit, Arial, sans-serif
+}
+
+.marca span {
+    color: #70a948
+}
+
+.enlaces {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 14px
+}
+
+.enlaces a:hover {
+    color: var(--verde)
+}
+
+.portada {
+    background: var(--suave);
+    padding: 65px 0
+}
+
+.portada-contenido {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 45px;
+    align-items: center
+}
+
+.portada img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 22px
+}
+
+.etiqueta {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--verde)
+}
+
+h1,
+h2,
+h3 {
+    font-family: Outfit, Arial, sans-serif
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.08;
+    letter-spacing: -1.7px;
+    margin: 22px 0
+}
+
+h1 em {
+    font-style: normal;
+    color: var(--verde)
+}
+
+p {
+    line-height: 1.7
+}
+
+.portada p {
+    font-size: 17px;
+    max-width: 520px
+}
+
+.boton {
+    display: inline-block;
+    background: var(--verde);
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.seccion {
+    padding: 70px 0
+}
+
+.seccion h2,
+.nosotros h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    margin: 12px 0
+}
+
+.herramientas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-top: 30px
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd8ce;
+    border-radius: 10px;
+    background: #fff;
+    font: inherit;
+    color: var(--texto)
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #70a948;
+    outline-offset: 2px
+}
+
+.contador {
+    font-size: 14px;
+    color: #66766b;
+    margin: 24px 0 18px
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px
+}
+
+.producto {
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 20px #173f300b;
+    transition: transform .2s
+}
+
+.producto:hover {
+    transform: translateY(-4px)
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background: var(--suave)
+}
+
+.info {
+    padding: 17px
+}
+
+.tipo {
+    font-size: 11px;
+    color: var(--verde);
+    font-weight: 800
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 10px 0
+}
+
+.sin-resultados {
+    grid-column: 1/-1;
+    padding: 30px;
+    background: var(--suave);
+    border-radius: 12px
+}
+
+.nosotros {
+    background: var(--suave);
+    padding: 65px 0
+}
+
+.nosotros p {
+    max-width: 670px
+}
+
+.contacto {
+    max-width: 1140px
+}
+
+footer {
+    background: var(--oscuro);
+    color: white;
+    padding: 26px 0;
+    font-size: 14px
+}
+
+@media(max-width:850px) {
+    .portada-contenido {
+        grid-template-columns: 1fr
+    }
+
+    .portada img {
+        height: 280px
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .navegacion {
+        flex-direction: column;
+        padding: 18px 0
+    }
+
+    .enlaces {
+        justify-content: center;
+        gap: 14px
+    }
+}
+
+@media(max-width:520px) {
+    .herramientas {
+        grid-template-columns: 1fr
+    }
+
+    .productos {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px
+    }
+
+    .producto img {
+        height: 130px
+    }
+
+    .info {
+        padding: 12px
+    }
+
+    .producto h3 {
+        font-size: 15px
+    }
+
+    .portada {
+        padding: 38px 0
+    }
+
+    .seccion {
+        padding: 45px 0
+    }
+}
