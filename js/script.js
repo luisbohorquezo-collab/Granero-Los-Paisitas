@@ -25,10 +25,10 @@ const productos = [
   {id:22, nombre:'Papel higiénico', categoria:'Aseo y hogar', foto:'img/hijienico.jpg'},
   {id:23, nombre:'Crema dental', categoria:'Cuidado personal', foto:'img/crema-dental.jpg'},
   {id:24, nombre:'Champú', categoria:'Cuidado personal', foto:'img/champu.jpg'},
-  {id:25, nombre:'Cerveza', categoria: 'Bebidas y Alimentos', foto:'img/cerveza.jpg'},
-  {id:26, nombre:'Gaseosas', categoria: 'Bebidas y Alimentos', foto:'img/gaseosas.jpg'},
-  {id:27, nombre:'Yogurt', categoria: 'Bebidas y Alimentos', foto:'img/yogures.jpg'},
-  {id:28, nombre:'Salchichas', categoria: 'Bebidas y Alimentos', foto:'img/salchichas.jpg'}
+  {id:25, nombre:'Cerveza', categoria: 'Bebidas y alimentos', foto:'img/cerveza.jpg'},
+  {id:26, nombre:'Gaseosas', categoria: 'Bebidas y alimentos', foto:'img/gaseosas.jpg'},
+  {id:27, nombre:'Yogurt', categoria: 'Bebidas y alimentos', foto:'img/yogures.jpg'},
+  {id:28, nombre:'Salchichas', categoria: 'Bebidas y alimentos', foto:'img/salchichas.jpg'}
 ];
 
 const buscar = document.querySelector('#buscar');
